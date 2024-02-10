@@ -11,14 +11,12 @@ function ColorPicker() {
   return (
     <>
       <div className="color-picker-container">
-        <h1>Color Picker</h1>
+        <h1>Color Picker App</h1>
         <div className="color-display" style={{ backgroundColor: color }}>
           <p>Selected Color: {color}</p>
         </div>
-        <label>
-          Select a Color:
-          <input type="color" value={color} onChange={handleColorChange} />
-        </label>
+        <label>Select a Color:</label>
+        <input type="color" value={color} onChange={handleColorChange} />
       </div>
     </>
   );
