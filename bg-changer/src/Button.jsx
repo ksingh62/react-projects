@@ -1,9 +1,12 @@
 import React from 'react'
 
-function Button({btnColor, onClick}) {
+function Button({btnColor, setColor}) {
+    const handleClick = () => {
+        setColor(btnColor)
+    }
   return (
     <button
-        onClick={() => onClick(btnColor)}
+        onClick={handleClick}
         className="outline-none px-4 py-1 text-white shadow-lg rounded-full"
         style={{ backgroundColor: btnColor }}
       >
