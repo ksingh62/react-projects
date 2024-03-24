@@ -61,8 +61,8 @@ function App() {
           </button>
         </div>
 
-        <div className="flex text-sm gap-x-2">
-          <div className="flex items-center gap-x-1">
+        <div className="flex text-sm gap-x-6 inputs-container">
+          <div className="flex items-center gap-x-1 ">
             <input
               type="range"
               id="length"
@@ -75,26 +75,30 @@ function App() {
             <label htmlFor="length">Length: {length}</label>
           </div>
 
-          <div className="flex items-center gap-x-1">
-            <input
-              type="checkbox"
-              defaultChecked={numChecked}
-              id="numInput"
-              onChange={() => {
-                setNumChecked((prevNumChecked) => !prevNumChecked);
-              }}
-            />
-            <label htmlFor="numInput">Number</label>
+          <div className="flex items-center gap-x-5">
+            <div className="checkbox-container">
+              <input
+                type="checkbox"
+                defaultChecked={numChecked}
+                id="numInput"
+                onChange={() => {
+                  setNumChecked((prevNumChecked) => !prevNumChecked);
+                }}
+              />
+              <label htmlFor="numInput">Number</label>
+            </div>
 
-            <input
-              type="checkbox"
-              defaultChecked={charChecked}
-              id="charInput"
-              onChange={() => {
-                setCharChecked((prevCharChecked) => !prevCharChecked);
-              }}
-            />
-            <label htmlFor="charInput">Characters</label>
+            <div>
+              <input
+                type="checkbox"
+                defaultChecked={charChecked}
+                id="charInput"
+                onChange={() => {
+                  setCharChecked((prevCharChecked) => !prevCharChecked);
+                }}
+              />
+              <label htmlFor="charInput">Characters</label>
+            </div>
           </div>
         </div>
       </div>

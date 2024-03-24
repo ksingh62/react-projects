@@ -5,3 +5,11 @@
 body{
     background-color: #121212;
 }
+
+@media screen and (max-width: 600px) {
+    .inputs-container {
+      flex-direction: column;
+      gap: 5px;
+      align-items: center;
+    }
+  }
