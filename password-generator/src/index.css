@@ -9,7 +9,8 @@ body{
 @media screen and (max-width: 600px) {
     .inputs-container {
       flex-direction: column;
-      gap: 5px;
+      gap: 20px;
       align-items: center;
+      
     }
   }
